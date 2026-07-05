@@ -1083,3 +1083,171 @@ body {
         font-size: 1.15rem;
     }
 }
+
+/* ============================================= */
+/* SECTION 6: IMPORTANT NEWS STYLES              */
+/* ============================================= */
+
+.news-section {
+    width: 100%;
+    background-color: #ffffff; /* Clean stark contrast switch */
+    padding: 100px 0;
+}
+
+/* Balanced container layout borders matching earlier sections */
+.news-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.news-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.news-main-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+}
+
+.news-subtitle {
+    font-size: 1rem;
+    color: #475569;
+    max-width: 620px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Responsive Columns Grid Layout (3 Columns Desktop) */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+
+/* Article Card Structure */
+.article-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.article-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+/* Explicit Image Container */
+.article-image-container {
+    width: 100%;
+    aspect-ratio: 4 / 3; /* Enforces uniform image sizes */
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+    background-color: #f1f5f9;
+}
+
+.article-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.article-card:hover .article-img {
+    transform: scale(1.03);
+}
+
+/* Content Area inside Cards */
+.article-body {
+    padding: 24px 0px; /* Aligned straight down matching border widths cleanly */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.article-category {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.article-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.45;
+    letter-spacing: -0.2px;
+}
+
+/* ============================================= */
+/* RESPONSIVE MEDIA QUERIES (Downscaling Section 6) */
+/* ============================================= */
+
+/* Tablet & Smaller Desktop Viewports */
+@media (max-width: 992px) {
+    .news-section {
+        padding: 70px 0;
+    }
+
+    .news-main-title {
+        font-size: 1.95rem; /* Header font reduction */
+    }
+
+    .articles-grid {
+        grid-template-columns: repeat(2, 1fr); /* Step down to 2 columns */
+        gap: 24px;
+    }
+}
+
+/* Tablets / Large Mobile Screens */
+@media (max-width: 768px) {
+    .news-header {
+        margin-bottom: 40px;
+    }
+
+    .news-main-title {
+        font-size: 1.7rem;
+    }
+
+    .news-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .article-title {
+        font-size: 1.15rem; /* Downscaled header text */
+    }
+}
+
+/* Small Smart Phones */
+@media (max-width: 480px) {
+    .news-section {
+        padding: 50px 0;
+    }
+
+    .news-main-title {
+        font-size: 1.45rem;
+    }
+
+    .articles-grid {
+        grid-template-columns: 1fr; /* Complete fallback stack structure */
+        gap: 20px;
+    }
+
+    .article-body {
+        padding: 16px 0;
+    }
+
+    .article-title {
+        font-size: 1.1rem;
+    }
+}
