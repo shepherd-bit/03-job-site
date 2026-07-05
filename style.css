@@ -860,3 +860,226 @@ body {
         font-size: 0.88rem;
     }
 }
+
+/* ============================================= */
+/* SECTION 5: FEATURED JOBS STYLES               */
+/* ============================================= */
+
+.featured-jobs-section {
+    width: 100%;
+    background-color: #f8fafc; /* Very light cool grey hue background */
+    padding: 100px 0;
+}
+
+/* Balanced boundary container */
+.featured-jobs-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.featured-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.featured-main-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 14px;
+    letter-spacing: -0.5px;
+}
+
+.featured-subtitle {
+    font-size: 1rem;
+    color: #475569;
+    max-width: 550px;
+    line-height: 1.6;
+}
+
+/* Slider Navigation Action Items */
+.slider-arrows {
+    display: flex;
+    gap: 12px;
+}
+
+.arrow-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff;
+    color: #0f172a;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.arrow-btn:hover {
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+/* Responsive Grid Display (4 Columns Desktop layout) */
+.jobs-display-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    width: 100%;
+}
+
+/* Card Presentation Elements */
+.job-card-item {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-card-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.06);
+}
+
+/* Job Taxonomy Badges */
+.job-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.badge-fulltime { color: #10b981; }  /* Green */
+.badge-remote { color: #4f46e5; }    /* Purple */
+.badge-parttime { color: #ef4444; }  /* Coral Red */
+
+.job-position-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    min-height: 56px; /* Safeguard multi-line card row alignment stability */
+}
+
+.job-location {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 35px;
+}
+
+/* Lower Logo Row Details */
+.company-footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto; /* Push footer base to absolute bottom of flex body card */
+}
+
+/* Explicit Image Container */
+.company-logo-container {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f5f9;
+    flex-shrink: 0;
+}
+
+.company-brand-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.company-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* ============================================= */
+/* RESPONSIVE MEDIA QUERIES (Downscaling Section 5) */
+/* ============================================= */
+
+/* Desktop & Mid Screen Transitions */
+@media (max-width: 1100px) {
+    .jobs-display-grid {
+        grid-template-columns: repeat(2, 1fr); /* Step down layout container columns early */
+        gap: 20px;
+    }
+    
+    .job-position-title {
+        min-height: auto; /* Dissolve fixed height maps when space shifts */
+    }
+}
+
+/* Tablet Scale Viewports */
+@media (max-width: 992px) {
+    .featured-jobs-section {
+        padding: 70px 0;
+    }
+
+    .featured-main-title {
+        font-size: 1.95rem;
+    }
+}
+
+/* Large Mobile Viewports */
+@media (max-width: 768px) {
+    .featured-header {
+        margin-bottom: 35px;
+    }
+
+    .featured-main-title {
+        font-size: 1.7rem;
+    }
+
+    .featured-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .slider-arrows {
+        display: none; /* Hide carousel dials safely on touch interfaces */
+    }
+}
+
+/* Small Screen Smartphones */
+@media (max-width: 480px) {
+    .featured-jobs-section {
+        padding: 50px 0;
+    }
+
+    .featured-main-title {
+        font-size: 1.45rem;
+    }
+
+    .jobs-display-grid {
+        grid-template-columns: 1fr; /* Pure layout reduction to stack view */
+        gap: 16px;
+    }
+
+    .job-card-item {
+        padding: 24px;
+    }
+
+    .job-position-title {
+        font-size: 1.15rem;
+    }
+}
