@@ -1251,3 +1251,196 @@ body {
         font-size: 1.1rem;
     }
 }
+/* ============================================= */
+/* SECTION 7: UPDATE STYLES                      */
+/* ============================================= */
+
+.update-section {
+    width: 100%;
+    background-color: #ffffff; /* Seamless clean white section background */
+    padding: 100px 0;
+}
+
+/* Balanced container layout to keep elements centered */
+.update-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Green Mail Icon Container */
+.update-icon-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #54d493; /* Smooth light green tone from image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(84, 212, 147, 0.15);
+}
+
+.update-envelope-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.update-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 18px;
+    letter-spacing: -0.5px;
+}
+
+.update-subtitle {
+    font-size: 1.05rem;
+    color: #475569;
+    max-width: 580px;
+    line-height: 1.65;
+    margin-bottom: 40px;
+}
+
+/* Inline Subscription Field Container */
+.subscribe-form {
+    width: 100%;
+    max-width: 520px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
+    margin-bottom: 25px;
+}
+
+.subscribe-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    font-size: 1rem;
+    color: #0f172a;
+    background: transparent;
+}
+
+.subscribe-input::placeholder {
+    color: #94a3b8;
+}
+
+/* Purple Form CTA Button */
+.btn-subscribe {
+    background-color: #4f46e5; /* Matching site primary purple accent */
+    color: #ffffff;
+    border: none;
+    outline: none;
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-subscribe:hover {
+    background-color: #4338ca;
+}
+
+/* Privacy Note Styling */
+.privacy-note {
+    font-size: 0.85rem;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.privacy-note a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.privacy-note a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================= */
+/* RESPONSIVE MEDIA QUERIES (Downscaling Section 7) */
+/* ============================================= */
+
+/* Tablet & Smaller Desktop Viewports */
+@media (max-width: 992px) {
+    .update-section {
+        padding: 80px 0;
+    }
+
+    .update-title {
+        font-size: 1.95rem; /* Downscaled header sizing */
+    }
+}
+
+/* Tablets / Large Mobile Screens */
+@media (max-width: 768px) {
+    .update-title {
+        font-size: 1.7rem;
+    }
+
+    .update-subtitle {
+        font-size: 0.98rem;
+        margin-bottom: 30px;
+    }
+
+    .update-icon-container {
+        width: 60px;
+        height: 60px; /* Reduced object sizing */
+        margin-bottom: 24px;
+    }
+
+    .update-envelope-icon {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+/* Small Smart Phones */
+@media (max-width: 480px) {
+    .update-section {
+        padding: 60px 0;
+    }
+
+    .update-title {
+        font-size: 1.45rem;
+    }
+
+    /* Stack input fields vertically on extra narrow viewports */
+    .subscribe-form {
+        flex-direction: column;
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+        gap: 12px;
+    }
+
+    .subscribe-input {
+        width: 100%;
+        background-color: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+    }
+
+    .btn-subscribe {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .privacy-note {
+        font-size: 0.8rem;
+    }
+}
