@@ -19,3 +19,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+// =============================================
+// SECTION 7: UPDATE FORM HANDLER
+// =============================================
+
+const subscribeForm = document.querySelector('.subscribe-form');
+if (subscribeForm) {
+    subscribeForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const emailInput = document.querySelector('.subscribe-input');
+        alert(`Thank you for subscribing with: ${emailInput.value}`);
+        emailInput.value = '';
+    });
+}
