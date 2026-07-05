@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobify - Find Your Dream Job</title>
+    <!-- Inter Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============================================= -->
+    <!-- SECTION 1: NAV BAR & HERO                      -->
+    <!-- ============================================= -->
+    <header class="hero-section">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="logo">Jobify</a>
+                
+                <ul class="nav-links">
+                    <li><a href="#">Demos</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <div class="nav-auth">
+                    <a href="#" class="btn-login">Login</a>
+                    <a href="#" class="btn-signup">Sign up</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Content Section -->
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Find a dream job that changes life.</h1>
+                <p class="hero-subtitle">With lots of unique blocks, you can easily build a page without coding. Build your next job website.</p>
+                
+                <!-- Search Bar Container -->
+                <div class="search-box">
+                    <div class="input-group">
+                        <input type="text" placeholder="Job title or keyword">
+                    </div>
+                    <div class="input-group dropdown-group">
+                        <select>
+                            <option value="" disabled selected>City</option>
+                            <option value="new-york">New York</option>
+                            <option value="san-francisco">San Francisco</option>
+                            <option value="remote">Remote</option>
+                        </select>
+                    </div>
+                    <button class="btn-search">Search</button>
+                </div>
+                
+                <p class="hero-tags">Try Product Designer, Software Engineer etc.</p>
+            </div>
+
+            <!-- Hero Image Frame -->
+            <div class="hero-image-wrapper">
+                <!-- Background decorative dot grid can be handled via CSS or absolute elements -->
+                <div class="dot-grid"></div>
+                <img src="images/hero.png" alt="Job Seeker Professional" class="hero-img">
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================= -->
+    <!-- SECTION 2: PARTNERS & ASSOCIATES               -->
+    <!-- ============================================= -->
+    <section class="partners-section">
+        <div class="partners-container">
+            <!-- Section Headers -->
+            <h2 class="partners-title">Big companies are here</h2>
+            <p class="partners-subtitle">
+                Our platform allow you to access some of the most lucrative gigs and access bets employers 
+                some of which are active in fortune 500 companies and others are startups household names. 
+                If you feel your skills are untapped, worry less.
+            </p>
+
+            <!-- Grid Container for Logos -->
+            <div class="logos-grid">
+                <!-- Logo 1: MakeLess -->
+                <div class="logo-wrapper">
+                    <img src="logos/careerbuilder-logo.png" alt="MakeLess Logo" class="partner-logo">
+                </div>
+                <!-- Logo 2: coworks -->
+                <div class="logo-wrapper">
+                    <img src="logos/flexJobs-logo.png" alt="Coworks Logo" class="partner-logo">
+                </div>
+                <!-- Logo 3: greener -->
+                <div class="logo-wrapper">
+                    <img src="logos/Indeed_logo.webp" alt="Greener Logo" class="partner-logo">
+                </div>
+                <!-- Logo 4: SAAS TODAY -->
+                <div class="logo-wrapper">
+                    <img src="logos/randstad-logo.webp" alt="SAAS Today Logo" class="partner-logo">
+                </div>
+                <!-- Logo 5: Dorfus -->
+                <div class="logo-wrapper">
+                    <img src="logos/upwork-logo (2).png" alt="Dorfus Logo" class="partner-logo">
+                </div>
+                <!-- Logo 6: askimat -->
+                <div class="logo-wrapper">
+                    <img src="logos/Vettery-logo.png" alt="Askimat Logo" class="partner-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- SECTION 3: JOBS CATEGORIES                     -->
+    <!-- ============================================= -->
+    <section class="categories-section">
+        <div class="categories-container">
+            
+            <!-- Section Header Content Grid Area -->
+            <div class="categories-header">
+                <div class="header-left">
+                    <h2 class="categories-title">Jobs by category</h2>
+                    <p class="categories-subtitle">With lots of unique blocks, you can easily build a page without coding.</p>
+                </div>
+                <div class="header-right">
+                    <a href="#" class="explore-link">
+                        Explore all categories 
+                        <span class="explore-arrow">&rarr;</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Categories Card Grid Layout -->
+            <div class="categories-grid">
+                
+                <!-- Category 1: Design (Active/Highlighted state matching original layout) -->
+                <div class="category-card card-active">
+                    <div class="card-info">
+                        <h3>Design</h3>
+                        <p>47 Jobs</p>
+                    </div>
+                    <div class="floating-arrow-box">
+                        <img src="icons/arrow-icon.png" alt="Arrow Indicator" class="card-arrow-icon">
+                    </div>
+                </div>
+
+                <!-- Category 2: Marketing -->
+                <div class="category-card">
+                    <div class="card-info">
+                        <h3>Marketing</h3>
+                        <p>51 Jobs</p>
+                    </div>
+                    <div class="floating-arrow-box">
+                        <img src="icons/arrow-icon.png" alt="Arrow Indicator" class="card-arrow-icon">
+                    </div>
+                </div>
+
+                <!-- Category 3: Engineering -->
+                <div class="category-card">
+                    <div class="card-info">
+                        <h3>Engineering</h3>
+                        <p>89 Jobs</p>
+                    </div>
+                    <div class="floating-arrow-box">
+                        <img src="icons/arrow-icon.png" alt="Arrow Indicator" class="card-arrow-icon">
+                    </div>
+                </div>
+
+                <!-- Category 4: Management -->
+                <div class="category-card">
+                    <div class="card-info">
+                        <h3>Mangement</h3>
+                        <p>16 Jobs</p>
+                    </div>
+                    <div class="floating-arrow-box">
+                        <img src="icons/arrow-icon.png" alt="Arrow Indicator" class="card-arrow-icon">
+                    </div>
+                </div>
+
+                <!-- Category 5: Finance -->
+                <div class="category-card">
+                    <div class="card-info">
+                        <h3>Finance</h3>
+                        <p>23 Jobs</p>
+                    </div>
+                    <div class="floating-arrow-box">
+                        <img src="icons/arrow-icon.png" alt="Arrow Indicator" class="card-arrow-icon">
+                    </div>
+                </div>
+
+                <!-- Category 6: Customer Support -->
+                <div class="category-card">
+                    <div class="card-info">
+                        <h3>Customer Support</h3>
+                        <p>34 Jobs</p>
+                    </div>
+                    <div class="floating-arrow-box">
+                        <img src="icons/arrow-icon.png" alt="Arrow Indicator" class="card-arrow-icon">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- SECTION 4: FIND JOBS                           -->
+    <!-- ============================================= -->
+    <section class="find-jobs-section">
+        <div class="find-jobs-container">
+            
+            <!-- Section Header Text -->
+            <div class="find-jobs-header">
+                <h2 class="find-jobs-title">Find jobs with 3 easy steps</h2>
+                <p class="find-jobs-subtitle">Explore a seamless approach to advancing your career and matching with industry leading companies.</p>
+            </div>
+
+            <!-- Content Row splits into Image Layout & Steps List -->
+            <div class="find-jobs-content">
+                
+                <!-- Left Side: Custom Image Container with floating UI badge -->
+                <div class="find-jobs-image-wrapper">
+                    <img src="images/job-search.jpg" alt="Professional Worker" class="main-steps-img">
+                    
+                    <!-- Floating Invitation Card element over image -->
+                    <div class="floating-invite-badge">
+                        <div class="badge-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin='round' stroke-width='2' d='M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.03 6.03 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9' />
+                            </svg>
+                        </div>
+                        <div class="badge-text">
+                            <p class="badge-label">New Invitation!</p>
+                            <p class="badge-heading">Interview invitation at Greener</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Step-by-Step Components -->
+                <div class="steps-list">
+                    
+                    <!-- Step 1 -->
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-details">
+                            <h3>Search for a job</h3>
+                            <p>Filter thousands of active listings by keyword, industry workspace, or city location to pinpoint exactly what you need.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-details">
+                            <h3>Apply within our website</h3>
+                            <p>Submit your digital portfolio, target resume, and professional credentials cleanly through our instant-apply mechanism.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-details">
+                            <h3>Get interview call</h3>
+                            <p>Track your recruitment status directly on your dashboard and connect face-to-face with direct hiring managers.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
