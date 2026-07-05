@@ -683,6 +683,7 @@ body {
     max-width: 440px;
     display: flex;
     justify-content: center;
+    margin-left: 60px;
 }
 
 .main-steps-img {
